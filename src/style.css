@@ -1,7 +1,208 @@
-/* body {
-  background-color: grey;
-} */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
+}
 
 body {
-  background-color: grey;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+/* --------------- */
+/* css reset above */
+/* --------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+
+body {
+  background-color: rgb(22, 22, 22);
+  font-family: "EB Garamond", serif;
+}
+
+.page-container {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(248, 248, 248);
+}
+
+header,
+main {
+  padding: 1rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.image-container {
+  position: relative;
+  margin: 1rem;
+}
+
+.tom-portrait {
+  object-fit: cover;
+}
+
+h1 {
+  position: absolute;
+  bottom: 0rem;
+  left: 50%;
+  transform: translate(-50%);
+  color: #8ddf8d;
+  color: hsl(135, 41%, 47%);
+  font-size: 4rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px black;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.about-me-title {
+  text-align: center;
+  margin: 0.8rem;
+}
+
+.about-me-text {
+  font-size: 1.2rem;
+}
+
+.about-me-logos {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.about-me-link {
+  height: 2.5rem;
+}
+
+.my-work-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2rem;
+  justify-items: center;
+}
+
+article {
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px -2px rgb(0, 0, 0);
+  overflow: hidden;
+  max-width: 320px;
+}
+.screenshot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  height: 200px;
+}
+
+.s1 {
+  background-color: hsl(0, 50%, 50%);
+}
+.s2 {
+  background-color: hsl(39, 50%, 50%);
+}
+.s3 {
+  background-color: hsl(60, 50%, 50%);
+}
+.s4 {
+  background-color: hsl(120, 50%, 25%);
+}
+.s5 {
+  background-color: hsl(240, 50%, 50%);
+}
+.s6 {
+  background-color: hsl(300, 50%, 25%);
+}
+
+.live-view,
+.github-logo {
+  fill: white;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+
+.project-description {
+  margin: 1rem;
+}
+
+.github-logo,
+.live-view {
+  width: 1rem;
+  height: auto;
+}
+
+.footer {
+  background-color: hsl(135, 61%, 20%);
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.footer-text {
+  padding: 1rem;
+}
+.footer-header {
+  text-align: center;
+}
+
+.footer-request {
+  font-size: 1.5rem;
+  margin: 1rem 0rem;
+}
+.phone-email,
+.address {
+  margin: 1rem 0rem;
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-link {
+  height: 2.5rem;
+  margin: 1rem;
+}
+
+.footer-image {
+  height: 24rem;
+  object-fit: cover;
+  margin-top: 2rem;
+}
+
+@media (min-width: 450px) {
+  h1 {
+    color: blue;
+    top: 1rem;
+  }
+  body {
+    /* margin: 2rem; */
+  }
+}
+@media (min-width: 800px) {
+  h1 {
+    color: orange;
+  }
+  body {
+    /* margin: 2rem; */
+  }
 }
